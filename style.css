@@ -1,36 +1,83 @@
-*{
+* {
     border: none;
     list-style: none;
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
-body{
+
+@font-face {
+    font-family: "roboto";
+    src: url("roboto", url(./apenser/Roboto/Roboto-Black.ttf) format("truetype"));
+}
+
+body {
+    font-family: roboto;
     width: 62.5%;
     margin: auto;
+    font-family: roboto, sans-serif;
 }
-.cabecalho{
+
+.cabecalho {
     display: flex;
-    
+
     justify-content: space-between;
     background-color: #2a2a2a;
 }
-.logo{
+
+.logo {
     padding: 2rem 0 3rem 3rem;
-   
+
 }
-.menu{
+
+.menu {
     padding: 1.7rem 3rem 3rem 0;
-   
-   
+
+
 }
-.menu li{
-    padding: 1rem;   
-    
+
+.menu li {
+    padding: 1rem;
+
 }
-.menu li a{
+
+.menu li a {
     padding: 1rem;
     border: 1px solid yellow;
     text-transform: uppercase;
     color: #fed001;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    
+    background-image: linear-gradient(to top, #fed001, white);
+}
+
+.container__descricao {
+    
+    width: 40%;
+    margin: auto 2rem;
+    
+}
+
+.container__descricao h1 {
+    color: #2a2a2a;
+    font-size: 3rem;
+    letter-spacing: .1rem;
+    line-height: 5rem;    
+    
+}
+
+.container__descricao__saiba-mais {
+    display: block;
+    
+}
+.container__descricao__saiba-mais{
+    background-color: #fed001;
+    width: 130px;
+    padding: .7rem;
+    margin-top: 2rem;
+    color: #2a2a2a;
 }
