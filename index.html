@@ -3,43 +3,51 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+
     <title>Projeto Apenser</title>
 </head>
 
 <body>
-    <div class="wappercontainer-dark">
+    <div class="wrappercontainer wappercontainer-dark wrappercontainer-fixed">
         <header class="header container">
             <div class="logo">
-                <img src="./apenser/imagens/logoAprenserreduzido.png" alt="logo aprenser">
+                <a href="index.html"><img src="./apenser/imagens/logoAprenser.png" alt="logo aprenser"></a>
             </div>
-            <nav>
-                <ul class="header_nav">
-                    <li>
-                        <a href="#cursos">cursos</a>
-                        <a href="#escola">Nossa Escola</a>
-                        <a href="#contatos">Contatos</a>
-                    </li>
+            <nav class="header_nav">
+                <ul>
+                    <li><a href="#cursos">cursos</a></li>
+                    <li><a href="#escola">Nossa Escola</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+
                 </ul>
             </nav>
         </header>
     </div>
-    <div class="wrappercontainer-hero">
+    <div class="wrappercontainer wrappercontainer-hero">
         <section class="container HeroBanner">
-            <h1>O saber é o que transforma nosso SER</h1>
-            <a href="#" class="btn">Saiba mais</a>
+            <div class="header_content">
+                <h1 class="hero_title">O saber é o que transforma nosso <span class="upper">ser</span></h1>
+                <a href="#" class="btn">Saiba mais</a>
+            </div>
             <img src="./apenser/imagens/HeroImage.png" alt="mulher segurando flores">
         </section>
     </div>
-    <div class="wrappercontainer-light">
-        <section id="cursos" class="cursos container">
-            <h2>Principais Cursos</h2>
+    <div id="cursos" class="wrappercontainer wrappercontainer-light wrappercontainer-paded">
+        <section  class="cursos container">
+            <h2 class="section_title">Principais Cursos</h2>
             <div class="cursos-container">
                 <article class="curso_card">
                     <img src="./apenser/imagens/curso-design.png" alt="curso designer">
                     <div class="cursos_card_content">
-                        <h3>Design para webG</h3>
-                        <p>O curso Design para Web é perfeito para aqueles que desejam aprender a criar designs atraentes e funcionais para sites e aplicativos móveis.</p>
+                        <h3>Design para web</h3>
+                        <p>O curso Design para Web é perfeito para aqueles que desejam aprender a criar designs
+                            atraentes e funcionais para sites e aplicativos móveis.</p>
                     </div>
                 </article>
 
@@ -47,7 +55,8 @@
                     <img src="./apenser/imagens/curso-design-1.png" alt="curso designer">
                     <div class="cursos_card_content">
                         <h3>Front End Developer</h3>
-                        <p>Aprenda HTML, CSS e Javascript e crei interfaces ricas e semânticas para páginas web, aplicativos on-line ou até mesmo aplicações para aparelhos celulares</p>
+                        <p>Aprenda HTML, CSS e Javascript e crei interfaces ricas e semânticas para páginas web,
+                            aplicativos on-line ou até mesmo aplicações para aparelhos celulares</p>
                     </div>
                 </article>
 
@@ -55,26 +64,42 @@
                     <img src="./apenser/imagens/curso-design-2.png" alt="curso designer">
                     <div class="cursos_card_content">
                         <h3>Back End Developer</h3>
-                        <p>Com este curso você vai dominar uma linguagem back-end a sua escolha, um sistema de banco de dados e aprenderá como funciona o protocolo HTTP na prática.</p>
+                        <p>Com este curso você vai dominar uma linguagem back-end a sua escolha, um sistema de banco de
+                            dados e aprenderá como funciona o protocolo HTTP na prática.</p>
                     </div>
                 </article>
             </div>
-            <a href="#">Ver mais cursos</a>
+            <a href="#" class="section_btn btn">Ver mais cursos</a>
         </section>
     </div>
-    <div class="wrappercontainer-dark2">
-        <section id="escola" class="container">
+    <div id="escola" class="wrappercontainer wappercontainer-dark2 wrappercontainer-paded">
+        <section  class="escola container">
+
             <img src="./apenser/imagens/nossa-escola.png" alt="mulher no laptop">
-            <h2>Nossa Escola</h2>
-            <p>Aprenda habilidades tecnológicas em demanda e alcance seus objetivos de carreira com a nossa escola de tecnologia online. Oferecemos uma ampla gama de cursos online, desde programação e desenvolvimento de software até design gráfico e análise de dados. Nossos instrutores experientes fornecerão a você um ambiente de aprendizado interativo e de suporte para ajudá-lo a adquirir as habilidades necessárias para ter sucesso em sua carreira. Inscreva-se agora e comece sua jornada para se tornar um profissional de tecnologia bem-sucedido.</p>
-        </section>
+            <div>
+                <h2>Nossa Escola</h2>
+                <p>Aprenda habilidades tecnológicas em demanda e alcance seus objetivos de carreira com a nossa escola
+                de
+                tecnologia online. Oferecemos uma ampla gama de cursos online, desde programação e desenvolvimento
+                de
+                software até design gráfico e análise de dados. Nossos instrutores experientes fornecerão a você um
+                ambiente de aprendizado interativo e de suporte para ajudá-lo a adquirir as habilidades necessárias
+                para
+                ter sucesso em sua carreira. Inscreva-se agora e comece sua jornada para se tornar um profissional
+                de
+                tecnologia bem-sucedido.</p>
+            </div>
+    </section>
     </div>
 
-    <div class="wrappercontainer-light">
-        <section id="contatos" class="container">
-            <h2>contatos</h2>
-            
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.4309213242987!2d-52.81697822372886!3d-28.466566459914922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fd49346d09c2d7%3A0xb7209db89ec85759!2sAv.%20Guilherme%20Augustin%2C%20258%20-%20Ipiranga%2C%20N%C3%A3o-Me-Toque%20-%20RS%2C%2099470-000!5e0!3m2!1spt-BR!2sbr!4v1685982801374!5m2!1spt-BR!2sbr" width="100%" height="525" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div id="contatos" class="wrappercontainer wrappercontainer-light wrappercontainer-paded">
+        <section  class="container">
+            <h2 class="section_title">contatos</h2>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.4309213242987!2d-52.81697822372886!3d-28.466566459914922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fd49346d09c2d7%3A0xb7209db89ec85759!2sAv.%20Guilherme%20Augustin%2C%20258%20-%20Ipiranga%2C%20N%C3%A3o-Me-Toque%20-%20RS%2C%2099470-000!5e0!3m2!1spt-BR!2sbr!4v1685982801374!5m2!1spt-BR!2sbr"
+                width="100%" height="525" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             <address>
                 Av. da Liberdade, 1001<br>
                 Tel.: +351 21 123 456<br>
@@ -82,7 +107,7 @@
             </address>
         </section>
     </div>
-    <div class="wrappercontainer-dark">
+    <div class="wrappercontainer wrappercontainer-dark">
         <footer>
             Desenvolvido por Serliv
         </footer>
